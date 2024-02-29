@@ -2,8 +2,20 @@
 # add an import statement for vehicle class
 
 from vehicleClassPackage.vehicleClass import *
+from vehicleClassPackage.HybridClass import Hybrid
+from vehicleClassPackage.lexusClass import Lexus
 
 if __name__ == "__main__":
+    #Instantiate  an object of type Hybrid
+    myPrius = Hybrid("hybrid", "Toyota", "Prius", 220)  # invoke the class constructor
+    #invoke the print type
+    myPrius.printType()
+    
+    
+    mylexus = Hybrid ("hybrid", "Camry", "Lexus", 200)
+    mylexus.printType()
+    
+    '''
     #instantiate an object if type vehicle
     myCorvette = Vehicle("Car", 120)   # trigger a call to constructor
     myCorvette.printType()             # invoke the method on object
@@ -27,5 +39,5 @@ if __name__ == "__main__":
     for vehicle in myVehicles:
         vehicle.printType()
         print(vehicle.getSpeed())
-    
+    '''
     
